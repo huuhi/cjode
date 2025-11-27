@@ -1,0 +1,49 @@
+# C语言项目忽略规则
+
+# 可执行文件
+*.exe
+*.out
+*.app
+
+# 目标文件和库文件
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# 调试文件
+*.pdb
+*.ilk
+*.gcda
+*.gcno
+*.gcov
+
+# 依赖文件
+*.d
+
+# 构建目录
+build/
+Debug/
+Release/
+bin/
+obj/
+
+# IDE相关文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 备份文件
+*.bak
+*.tmp
+*.temp
