@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2ee84c1f755e3f26",
+        "id": "03228e3a43c41a04",
         "type": "tabs",
         "children": [
           {
-            "id": "fb9d178d8e6d66b8",
+            "id": "14382962d3f5295c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +19,30 @@
               },
               "icon": "lucide-file",
               "title": "程序设计与C语言的基本概念"
-            }
+            },
+            "group": "72d2f09067dcefe0"
+          }
+        ]
+      },
+      {
+        "id": "9f8433afe6feac4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e63b6371b61b536",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "learn_pro/lesson_1/程序设计与C语言的基本概念.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "程序设计与C语言的基本概念 的大纲"
+            },
+            "group": "72d2f09067dcefe0"
           }
         ]
       }
@@ -183,18 +206,22 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "fb9d178d8e6d66b8",
+  "active": "14382962d3f5295c",
   "lastOpenFiles": [
-    "learn_pro/lesson_1/pointer_test_2.exe",
-    "learn_pro/lesson_1/pointer_test_2.c",
-    "learn_pro/lesson_1/pointer_test.exe",
-    "learn_pro/lesson_1/pointer_test.c",
-    "learn_pro/lesson_1/pointer_demo.exe",
-    "learn_pro/lesson_1/pointer_demo.c",
-    "learn_pro/lesson_1/function_test.exe",
-    "learn_pro/lesson_1/function_test.c",
-    "learn_pro/lesson_1/d.exe",
-    "learn_pro/lesson_1/d.c",
-    "learn_pro/lesson_1/function_demo.exe"
+    "learn_pro/lesson_1/comprehensive/node_test.exe",
+    "learn_pro/lesson_1/comprehensive/node_test.c",
+    "learn_pro/lesson_1/comprehensive/test_4.c",
+    "learn_pro/lesson_1/comprehensive/good_student.txt",
+    "learn_pro/lesson_2/数据结构.md",
+    "learn_pro/lesson_1/comprehensive/struct_pro.exe",
+    "learn_pro/lesson_1/comprehensive/struct_pro.c",
+    "learn_pro/lesson_1/comprehensive/static_demo.exe",
+    "learn_pro/lesson_1/comprehensive/static_demo.c",
+    "learn_pro/lesson_1/comprehensive/define_demo.exe",
+    "learn_pro/lesson_1/comprehensive/README.md",
+    "learn_pro/lesson_1/comprehensive/define_demo.c",
+    "learn_pro/lesson_1/comprehensive",
+    "learn_pro/lesson_1/程序设计与C语言的基本概念.md",
+    "learn_pro/lesson_2/README.md"
   ]
 }

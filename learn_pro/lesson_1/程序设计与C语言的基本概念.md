@@ -627,3 +627,120 @@ void swap(int *a,int *b){
         
     - 对未分配内存的指针进行解引用（如 `int *p; *p=5;`）。
 a=23  b=15 a=8
+
+### **（九）用结构体类型处理组合数据**
+**核心概念**：
+
+- **结构体定义**：创建一种新的数据类型。
+```c
+struct 结构体名 {
+    类型1 成员名1;
+    类型2 成员名2;
+    ...
+};
+```
+
+**结构体变量定义与初始化**：
+```c
+// 定义的同时定义变量
+struct Student {
+    char name[20];
+    int age;
+    float score;
+} stu1, stu2 = {"Mike", 20, 90.5};
+
+// 先定义类型，再定义变量
+struct Student stu3;
+struct Student stu4 = {"Anna", 19, 88.0};
+```
+**访问结构体成员**：使用点操作符 `.`
+```c
+strcpy(stu3.name, "Tom"); // 对字符串成员赋值要用strcpy
+stu3.age = 21;
+stu3.score = 95.5;
+printf("%s的年龄是%d\n", stu4.name, stu4.age);
+```
+**结构体与指针**：定义指向结构体的指针，使用 `->` 操作符访问成员。
+```c
+struct Student *p_stu = &stu1;
+// 以下三种访问方式等价：
+printf("Score: %.1f\n", stu1.score);
+printf("Score: %.1f\n", (*p_stu).score); // .的优先级高于*，所以要括号
+printf("Score: %.1f\n", p_stu->score);   // 最常用的方式：指向运算符
+```
+
+**关键代码示例**：
+```c
+#include <stdio.h>
+#include <string.h>
+
+// 定义结构体
+struct Book {
+    char title[50];
+    char author[30];
+    float price;
+};
+
+// 函数：打印书籍信息，参数是结构体指针
+void printBook(struct Book *book) {
+    printf("书名: %s\n", book->title);
+    printf("作者: %s\n", book->author);
+    printf("价格: %.2f元\n\n", book->price);
+}
+
+int main() {
+    // 初始化结构体变量
+    struct Book book1 = {"C程序设计", "谭浩强", 49.8};
+    struct Book book2;
+    
+    // 逐个成员赋值
+    strcpy(book2.title, "数据结构");
+    strcpy(book2.author, "严蔚敏");
+    book2.price = 55.0;
+    
+    // 调用函数打印信息
+    printBook(&book1);
+    printBook(&book2);
+    
+    return 0;
+}
+```
+- **易错点**：
+    
+    - 混淆结构体类型名 `struct Student` 和变量名 `stu1`。
+        
+    - 试图用 `=` 直接给字符数组成员赋值（应使用 `strcpy`）。
+        
+    - 忘记 `->` 操作符而直接用指针访问成员。
+### **（十）文件**
+
+- **核心概念**：
+    
+    - **文件指针**：`FILE *fp;` 它是一个指向文件信息结构的指针。
+        
+	    - **文件打开**：`fp = fopen("文件名", "打开模式");`
+        
+        - 常用模式：`"r"` (只读), `"w"` (只写，创建新文件/清空原文件), `"a"` (追加), `"r+"` (读写)。"rb","wb"二进制的读写
+            
+    - **文件关闭**：`fclose(fp);` **非常重要，否则可能导致数据丢失！**
+        
+    - **常用文件读写函数**：
+        
+        - `fgetc(fp)` / `fputc(ch, fp)`：读写一个字符。
+            
+        - `fgets(str, n, fp)` / `fputs(str, fp)`：读写字符串。
+            
+        - `fscanf(fp, "格式", 地址)` / `fprintf(fp, "格式", 变量)`：格式化读写。
+            
+        - `fread(buffer, size, count, fp)` / `fwrite(buffer, size, count, fp)`：二进制读写。
+```c
+
+```
+
+**易错点**：
+
+- 打开文件后不检查 `fp` 是否为 `NULL`。
+    
+- 忘记关闭文件。
+    
+- 读写模式不匹配（如用 `"r"` 模式去写文件）。
