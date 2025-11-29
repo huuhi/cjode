@@ -6,6 +6,7 @@
       {
         "id": "03228e3a43c41a04",
         "type": "tabs",
+        "dimension": 49.555837563451774,
         "children": [
           {
             "id": "14382962d3f5295c",
@@ -20,16 +21,17 @@
               "icon": "lucide-file",
               "title": "程序设计与C语言的基本概念"
             },
-            "group": "72d2f09067dcefe0"
+            "group": "f540a2ff3120cc80"
           }
         ]
       },
       {
-        "id": "9f8433afe6feac4b",
+        "id": "075f5eefa4173f16",
         "type": "tabs",
+        "dimension": 50.444162436548226,
         "children": [
           {
-            "id": "8e63b6371b61b536",
+            "id": "6ea010e6ebab150c",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -42,7 +44,7 @@
               "icon": "lucide-list",
               "title": "程序设计与C语言的基本概念 的大纲"
             },
-            "group": "72d2f09067dcefe0"
+            "group": "f540a2ff3120cc80"
           }
         ]
       }
@@ -208,6 +210,11 @@
   },
   "active": "14382962d3f5295c",
   "lastOpenFiles": [
+    "learn_pro/lesson_1/pointer_pro/arr_pointer.exe",
+    "learn_pro/lesson_1/pointer_pro/arr_pointer.c",
+    "learn_pro/lesson_1/pointer_pro/pointer_demo01.exe",
+    "learn_pro/lesson_1/pointer_pro/pointer_demo01.c",
+    "learn_pro/lesson_1/pointer_pro",
     "learn_pro/lesson_1/comprehensive/node_test.exe",
     "learn_pro/lesson_1/comprehensive/node_test.c",
     "learn_pro/lesson_1/comprehensive/test_4.c",
@@ -215,12 +222,7 @@
     "learn_pro/lesson_2/数据结构.md",
     "learn_pro/lesson_1/comprehensive/struct_pro.exe",
     "learn_pro/lesson_1/comprehensive/struct_pro.c",
-    "learn_pro/lesson_1/comprehensive/static_demo.exe",
-    "learn_pro/lesson_1/comprehensive/static_demo.c",
-    "learn_pro/lesson_1/comprehensive/define_demo.exe",
     "learn_pro/lesson_1/comprehensive/README.md",
-    "learn_pro/lesson_1/comprehensive/define_demo.c",
-    "learn_pro/lesson_1/comprehensive",
     "learn_pro/lesson_1/程序设计与C语言的基本概念.md",
     "learn_pro/lesson_2/README.md"
   ]

@@ -28,6 +28,7 @@ int main() {
 
     // 添加第二个节点
     temp = (struct Node*)malloc(sizeof(struct Node));
+    // 此时temp的值是World
     strcpy(temp->data, "World");
     // 临时节点指向NULL，head指向临时节点
     // head->temp->NULL
@@ -36,8 +37,10 @@ int main() {
 
     // 添加第三个节点
     temp = (struct Node*)malloc(sizeof(struct Node));
+    // 为啥这里赋值为C
     strcpy(temp->data, "C");
-    temp->next = head; // 这里形成了一个环
+    // 
+    temp->next = NULL;
     head->next->next = temp;
 
     // 遍历链表（只遍历前5个节点防止死循环）
